@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="./assets/fontawesome-6/css/all.css" />
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="sony-header">
+      <a href="#"
+        ><img src="./assets/images/sony.webp" alt="Sony" class="sony-logo"
+      /></a>
+
+      <nav>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#0f1016"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <label id="overlay" for="sidebar-active"></label>
+
+        <ul class="nav-links">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#0f1016"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+
+          <li>
+            <a
+              href="#features"
+              onclick="document.getElementById('sidebar-active').checked = false;"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#specs"
+              onclick="document.getElementById('sidebar-active').checked = false;"
+              >Specs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimonials"
+              onclick="document.getElementById('sidebar-active').checked = false;"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#footer-content"
+              onclick="document.getElementById('sidebar-active').checked = false;"
+              >Support</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>WF-1000XM5<br /><span>Silence Never Sounded Better</span></h1>
+            <p>
+              Experience Sony's best-ever noise cancellation with our new
+              Integrated Processor V2 and HD Noise Canceling Processor QN2e.
+            </p>
+
+            <div class="key-specs">
+              <div class="spec-item">
+                <h3>24-bit Audio</h3>
+                <p>LDAC Technology</p>
+              </div>
+              <div class="spec-item">
+                <h3>36h Playtime</h3>
+                <p>With charging case</p>
+              </div>
+              <div class="spec-item">
+                <h3>IPX4</h3>
+                <p>Splash resistant</p>
+              </div>
+              <div class="spec-item">
+                <h3>8.4g</h3>
+                <p>Ergonomic design</p>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#cta" class="btn">Buy Now</a>
+              <a href="#features" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="./assets/images/wf_1000xm5_bme__1_1_ecommerce_0a0b.webp"
+              alt="Sony WF-1000XM5"
+            />
+          </div>
+
+          <div class="video-demo">
+            <iframe
+              width="360"
+              height="275"
+              src="https://www.youtube.com/embed/pLJ6Mos0ki4?si=cBTug07IMCwi1ghS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Features -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <h2 class="section-title">Revolutionary Sound Technology</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <i class="fas fa-volume-off feature-icon"></i>
+            <h3>Active Noise Cancellation</h3>
+            <p>
+              Block out external noise with our advanced ANC technology that
+              adapts to your environment.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-wifi feature-icon"></i>
+            <h3>Bluetooth 5.3</h3>
+            <p>Stable connection with multipoint pairing</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-microphone feature-icon"></i>
+            <h3>Precise Voice Pickup</h3>
+            <p>Beamforming mics with bone conduction sensor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Noise Cancellation Demo -->
+    <section class="nc-demo">
+      <div class="container">
+        <div class="nc-overlay">
+          <h2>Adaptive Sound Control</h2>
+          <p>
+            Automatically adjusts ambient sound settings based on your activity
+            and location
+          </p>
+          <ul class="nc-features">
+            <li>Personalized noise cancellation optimization</li>
+            <li>20 levels of adjustable ambient sound</li>
+            <li>Speak-to-Chat automatic pausing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs-section" id="specs">
+      <div class="container">
+        <h2 class="section-title">Technical Specifications</h2>
+        <table class="specs-table">
+          <tr>
+            <td>Driver Unit</td>
+            <td>8.4mm Dynamic Driver X</td>
+          </tr>
+          <tr>
+            <td>Frequency Response</td>
+            <td>20Hz - 40,000Hz (LDAC)</td>
+          </tr>
+          <tr>
+            <td>Water Resistance</td>
+            <td>IPX4</td>
+          </tr>
+          <tr>
+            <td>Battery Life</td>
+            <td>8hr (earbuds) + 28hr (case)</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>5.9g (each earbud)</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title text-center">What Our Customers Say</h2>
+        <p class="section-subtitle text-center">
+          Join thousands of satisfied users who have upgraded their audio
+          experience
+        </p>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The sound quality is incredible! I've tried many wireless
+              earbuds, but none compare to Sony WF-1000XM5."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Sarah J."
+                class="author-img"
+              />
+              <div>
+                <div class="author-name">Sarah J.</div>
+                <div class="author-title">Verified Buyer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Perfect for my daily commute. The noise cancellation blocks out
+              all the train noise so I can enjoy my music."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Michael T."
+                class="author-img"
+              />
+              <div>
+                <div class="author-name">Michael T.</div>
+                <div class="author-title">Music Producer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "I use them for workouts and they stay in place perfectly. The
+              sound quality is amazing for the price."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Emily R."
+                class="author-img"
+              />
+              <div>
+                <div class="author-name">Emily R.</div>
+                <div class="author-title">Fitness Instructor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+      <div class="container">
+        <h2 class="section-title text-center">
+          Ready to Experience Premium Sound?
+        </h2>
+        <p class="section-subtitle text-center">
+          Sign up to be the first to know about new products and exclusive
+          offers
+        </p>
+
+        <form class="cta-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" id="footer-content">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Sony WF-1000XM5</h3>
+
+            <div class="social-links">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Warranty</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Sony. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
